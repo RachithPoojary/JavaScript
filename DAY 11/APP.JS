@@ -63,7 +63,7 @@ console.log(obj);
 let x = new Object();
 x.name = "Rachith";
 x.rollno = 69;
-x.skills= " good in bed";
+x.skills= " good in bed"; v 
 console.log(x);
 
 
