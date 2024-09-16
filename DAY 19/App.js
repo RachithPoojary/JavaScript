@@ -64,3 +64,12 @@ h1.removeAttribute("style");
 let r1 = user.hasAttribute("required");
 console.log(r1);
 console.log(p.hasAttribute("title"));
+
+// let nL = document.querySelectorAll("h1");
+// for(let i = 0;i<nL.length;i++){
+//     nL[i].removeAttribute("style");
+// }
+
+[...nL].map((v)=>{
+    v.removeAttribute("style");
+});
