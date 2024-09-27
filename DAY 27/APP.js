@@ -1,7 +1,7 @@
 let data = window.fetch("https://dummyjson.com/products")
-data.then {
+data.then (
     (d) => {
-        let p1 = d.json()
+        let p1 = d.json();
         p1.then(
             ({ products:v}) => {
                 let tbody = document.querySelector("tbody")
@@ -19,13 +19,12 @@ data.then {
                     <td>${description}</td>
                     <td>${price}</td>
                     </tr>
-                    `;
-                }),
+                    `}),
 
             },
                 (r)=> r
             );
             },
             (e)=>e
-        );
-    }
+
+        )
